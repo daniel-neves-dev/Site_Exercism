@@ -4,7 +4,7 @@ module Basic
 
     def remaining_minutes_in_oven(actual_minutes_in_oven)
       cooking = EXPECTED_MINUTES_IN_OVEN - actual_minutes_in_oven
-      (actual_minutes_in_oven > 40) ? "It is over cooked" : cooking
+      (actual_minutes_in_oven > 40) ? "It is over cooked" : "It need more: #{cooking} minutes"
     end
 
     def preparation_time_in_minutes(layers)

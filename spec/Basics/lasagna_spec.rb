@@ -5,7 +5,7 @@ RSpec.describe Basic::Lasagna do
 
     it "remind minutes in the oven" do
       remind = Basic::Lasagna.new.remaining_minutes_in_oven(30)
-      expect(remind).to eq(10)
+      expect(remind).to eq("It need more: 10 minutes")
     end
 
     it "over cooked" do
